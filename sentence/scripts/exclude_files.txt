@@ -1,0 +1,11 @@
+*.log
+.gitignore
+outputs
+.git
+ipynb
+scores
+logs
+log_pos
+*.ckpt
+*.npy
+*.ipynb
