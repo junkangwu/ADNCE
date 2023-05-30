@@ -211,15 +211,6 @@ def cl_forward(cls,
         cos_sim = cos_sim + weights
     if cls.model_args.loss_mode == "easy":
         loss = loss_fct(cos_sim, labels)
-    elif cls.model_args.loss_mode == "easy_jk":
-        pos = torch.exp(torch.diag(cos_sim))
-        neg = torch.sum(torch.exp(cos_sim), dim=1)
-        loss = - torch.log(pos / neg).mean()
-    elif cls.model_args.loss_mode == "easy_dro":
-        pos = torch.exp(torch.diag(cos_sim))
-        neg = torch.sum(torch.exp(cos_sim), dim=1)
-        neg = torch.pow(neg, cls.model_args.w1)
-        loss = - torch.log(pos / neg).mean()
     elif cls.model_args.loss_mode == "reweight":
         pos = torch.exp(torch.diag(cos_sim))
         mu = cls.model_args.w1
@@ -229,17 +220,6 @@ def cl_forward(cls,
         weight = weight / weight.mean(dim=-1, keepdim=True)
         neg = torch.sum(torch.exp(cos_sim) * weight.detach(), dim=1)
         loss = - torch.log(pos / neg).mean()
-    elif cls.model_args.loss_mode == "NEG_REWEIGHT_NORM":
-        pos = torch.exp(torch.diag(cos_sim))
-        neg_score = cos_sim * cls.model_args.temp
-        # compute weight
-        weight = np.power(cls.model_args.temp, 2) / torch.var(neg_score, dim=1)
-        weight = torch.pow(weight, cls.model_args.w1)
-        weight = weight / weight.mean()
-
-        loss_1 = - torch.mean(pos.log())
-        loss_2 = torch.log(torch.sum(torch.exp(cos_sim), dim=1) )
-        loss = loss_1 + torch.mean(loss_2 * weight.detach())
 
     # Calculate loss for MLM
     if mlm_outputs is not None and mlm_labels is not None:

@@ -145,7 +145,7 @@ class simclr(nn.Module):
         Ng = neg_sim.mean(dim=1)
         loss = - torch.log(pos_sim / (Ng)).mean()
         return loss
-    elif mode == "reweight":
+    elif mode == "adnce":
         mu = args.w1
         sigma = args.w2
         weight = 1. / (sigma * math.sqrt(2 * math.pi)) * torch.exp( - (neg_sim.log() * T - mu) ** 2 / (2 * math.pow(sigma, 2)))
