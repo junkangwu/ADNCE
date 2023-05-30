@@ -1,5 +1,0 @@
-*.log
-*.pth
-*.pkl
-*.ckpt
-*.ipynb
