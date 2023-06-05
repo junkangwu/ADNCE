@@ -15,6 +15,19 @@ bash train_test.sh $GPU_ID $tmp $DATASET_NAME $mode $w1 $w2 $num_worls $bsz
 
 ```$GPU_ID``` is the lanched GPU ID and ```w1, w2, temp``` denote as mu, sigma and temperature respectively. ```$DATASET_NAME``` is the dataset name (cifar10, cifar100, stl10),  ```mode``` represents the model (easy or adnce). ```$num_worls``` and ```$bsz``` are hyperparamters for training:
 
+Commands for reproducing the reported results:
+
+```bash
+### CIFAR10
+bash train_test.sh 0 0.4 cifar10 adnce 0.7 0.5 8 256
+
+### CIFAR100
+bash train_test.sh 0 0.3 cifar100 adnce 0.5 1.0 8 256
+
+### STL10
+bash train_test.sh 0 0.2 stl10 adnce 0.8 1.0 8 256
+
+```
 
 ## Acknowledgements
 
