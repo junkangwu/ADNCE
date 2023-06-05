@@ -10,10 +10,10 @@ Usage (example):
 ```bash
 mkdir logs
 mkdir outputs_
-bash train_test.sh $GPU_ID $tmp $DATASET_NAME $mode $w1 $w2 $num_worls $bsz
+bash train_test.sh $GPU_ID $tmp $DATASET_NAME $mode $w1 $w2 $num_works $bsz
 ```
 
-```$GPU_ID``` is the lanched GPU ID and ```w1, w2, temp``` denote as mu, sigma and temperature respectively. ```$DATASET_NAME``` is the dataset name (cifar10, cifar100, stl10),  ```mode``` represents the model (easy or adnce). ```$num_worls``` and ```$bsz``` are hyperparamters for training:
+```$GPU_ID``` is the lanched GPU ID and ```w1, w2, temp``` denote as mu, sigma and temperature respectively. ```$DATASET_NAME``` is the dataset name (cifar10, cifar100, stl10),  ```mode``` represents the model (easy or adnce). ```$num_works``` and ```$bsz``` are hyperparamters for training:
 
 Commands for reproducing the reported results:
 
