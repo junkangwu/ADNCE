@@ -211,7 +211,7 @@ def cl_forward(cls,
         cos_sim = cos_sim + weights
     if cls.model_args.loss_mode == "easy":
         loss = loss_fct(cos_sim, labels)
-    elif cls.model_args.loss_mode == "reweight":
+    elif cls.model_args.loss_mode == "adnce":
         pos = torch.exp(torch.diag(cos_sim))
         mu = cls.model_args.w1
         sigma = cls.model_args.w2

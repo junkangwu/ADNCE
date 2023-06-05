@@ -173,7 +173,7 @@ def get_dataset(dataset_name, root='../data', pair=True, noise_mode=None, stage1
     if pair:
         if dataset_name=='cifar10':
             print(root)
-            train_data = CIFAR10Pair(root=root, train=True, transform=train_transform, download=False)
+            train_data = CIFAR10Pair(root=root, train=True, transform=train_transform, download=True)
             memory_data = CIFAR10Pair(root=root, train=True, transform=test_transform)
             test_data = CIFAR10Pair(root=root, train=False, transform=test_transform)
         elif dataset_name=='cifar100':

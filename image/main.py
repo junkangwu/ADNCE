@@ -17,7 +17,7 @@ import time
 import sys
 from model import DRO_Loss
 import math
-def get_logger(name, log_dir="./log_pos/"):
+def get_logger(name, log_dir="./logs/"):
     """
     Creates a logger object
 

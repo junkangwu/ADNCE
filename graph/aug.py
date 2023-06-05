@@ -304,7 +304,7 @@ class TUDataset_aug(InMemoryDataset):
         return data, data_aug
 
 
-def drop_nodes(data, noise_ratio):
+def drop_nodes(data, noise_ratio=0.1):
 
     node_num, _ = data.x.size()
     _, edge_num = data.edge_index.size()
@@ -351,7 +351,7 @@ def permute_edges(data):
 
     return data
 
-def subgraph(data, noise_ratio):
+def subgraph(data, noise_ratio=0.2):
 
     node_num, _ = data.x.size()
     _, edge_num = data.edge_index.size()
