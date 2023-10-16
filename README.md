@@ -16,6 +16,7 @@ This is the PyTorch implementation for our NeurIPS 2023 paper.
 > Junkang Wu, Jiawei Chen, Jiancan Wu, Wentao Shi, Xiang Wang & Xiangnan He. 2023. Understanding Contrastive Learning via Distributionally Robust Optimization
 
 # Pseudo Code
+The implementation only requires a small modification to the InfoNCE code.
 ```py
 # pos     : exp of inner products for positive examples
 # neg     : exp of inner products for negative examples
