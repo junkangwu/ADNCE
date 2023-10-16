@@ -45,10 +45,10 @@ The code can be found in  [graph](./graph/README.md)
 If you find this repo useful for your research, please consider citing the paper
 ```
 @inproceedings{wu2023ADNCE,
-  author       = {Junkang Wu and Jiawei Chen and Jiancan Wu and Wentao Shi and Xiang Wang and Xiangnan He},
-  title        = {Understanding Contrastive Learning via Distributionally Robust Optimization},
-  booktitle    = {NeurIPS},
-  year         = {2023}
+  author = {Junkang Wu and Jiawei Chen and Jiancan Wu and Wentao Shi and Xiang Wang and Xiangnan He},
+  title = {Understanding Contrastive Learning via Distributionally Robust Optimization},
+  booktitle = {NeurIPS},
+  year = {2023}
 }
 ```
 
