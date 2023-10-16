@@ -2,7 +2,7 @@
 Understanding Contrastive Learning via Distributionally Robust Optimization
 </h2>
 <p align='center'>
-<img src='https://github.com/junkangwu/ADNCE/adnce.jpg?raw=true' width='500'/>
+<img src='https://github.com/junkangwu/ADNCE/blob/master/adnce.jpg?raw=true' width='500'/>
 </p>
 <!-- <div align="center"> -->
 
