@@ -1,7 +1,9 @@
 <h2 align="center">
 Understanding Contrastive Learning via Distributionally Robust Optimization
 </h2>
-
+<p align='center'>
+<img src='https://github.com/junkangwu/ADNCE/adnce.jpg?raw=true' width='500'/>
+</p>
 <!-- <div align="center"> -->
 
 <!-- [![](https://img.shields.io/badge/paper-pink?style=plastic&logo=GitBook)](https://arxiv.org/pdf/2302.04775.pdf)
