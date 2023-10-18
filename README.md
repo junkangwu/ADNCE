@@ -4,16 +4,15 @@ Understanding Contrastive Learning via Distributionally Robust Optimization
 <p align='center'>
 <img src='https://github.com/junkangwu/ADNCE/blob/master/adnce.jpg?raw=true' width='500'/>
 </p>
-<!-- <div align="center"> -->
+<div align="center">
 
-<!-- [![](https://img.shields.io/badge/paper-pink?style=plastic&logo=GitBook)](https://arxiv.org/pdf/2302.04775.pdf)
-[![](https://img.shields.io/badge/-github-green?style=plastic&logo=github)](https://github.com/junkangwu/Adap_tau)  -->
-<!-- [![](https://img.shields.io/badge/-youtube-red?style=plastic&logo=airplayvideo)](https://www.youtube.com/watch?v=9d0eXaO_kOw) 
-[![](https://img.shields.io/badge/-slides-grey?style=plastic&logo=adobe)](https://cs.stanford.edu/~shirwu/slides/dir-iclr22.pdf)  -->
-<!-- </div> -->
+[![](https://img.shields.io/badge/paper-pink?style=plastic&logo=GitBook)](https://arxiv.org/abs/2310.11048)
+[![](https://img.shields.io/badge/-github-green?style=plastic&logo=github)](https://github.com/junkangwu/ADNCE) 
+
+</div>
 
 This is the PyTorch implementation for our NeurIPS 2023 paper. 
-> Junkang Wu, Jiawei Chen, Jiancan Wu, Wentao Shi, Xiang Wang & Xiangnan He. 2023. Understanding Contrastive Learning via Distributionally Robust Optimization
+> Junkang Wu, Jiawei Chen, Jiancan Wu, Wentao Shi, Xiang Wang & Xiangnan He. 2023. Understanding Contrastive Learning via Distributionally Robust Optimization. [arxiv link](https://arxiv.org/abs/2310.11048)
 
 # Pseudo Code
 The implementation only requires a small modification to the InfoNCE code.
